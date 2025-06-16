@@ -1,0 +1,29 @@
+input_files:
+  - data/data_cna.txt
+  - data/data_clinical_sample.txt
+  - data/data_methylation_promoters_rrbs.txt
+  - data/data_mrna_illumina_microarray.txt
+  - data/data_mutations.txt
+  - data/data_clinical_patient.txt
+
+
+checked_output: results/checked_inputs.txt
+cleaned_output: results/cleaned_data_summary.txt
+merged_data_output: results/merged_data.csv
+normalized_expression: results/normalized_expression.txt
+mutation_file: data/data_mutations.txt
+filtered_mutations_output: results/filtered_mutations.txt
+top_n_mutated_genes: 100
+top_mutated_genes: results/top_mutated_genes.txt
+methylation_file: data/data_methylation_promoters_rrbs.txt
+cna_file: data/data_cna.txt
+merged_omics_output: results/merged_top_gene_multiomics.csv
+expression_heatmap: results/heatmaps/expression_heatmap.png
+methylation_heatmap: results/heatmaps/methylation_heatmap.png
+cna_heatmap: results/heatmaps/cna_heatmap.png
+clinical_patient_file: data/data_clinical_patient.txt
+labeled_survival_output: results/labeled_survival_data.csv
+final_model_data_output: results/final_model_data.csv
+top_cox_features: results/top_cox_features.csv
+tuned_cox_model: results/tuned_cox_model.csv
+results_dir: results
